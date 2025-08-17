@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML & CSS コード集（基礎50例）</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background: #f9f9f9; }
+    h1 { margin-bottom: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 40px; }
+    th, td { border: 1px solid #ccc; padding: 10px; vertical-align: top; }
+    th { background: #eee; }
+    .preview { padding: 10px; background: #fff; border: 1px solid #ddd; }
+    code { display: block; background: #272822; color: #f8f8f2; padding: 8px; border-radius: 5px; white-space: pre-wrap; font-size: 0.9em; }
+    button { background:#007BFF; color:#fff; padding:10px 20px; border:none; border-radius:5px; cursor:pointer; }
+    button:hover{ background:#0056b3; }
+    .card { border:1px solid #ccc; border-radius:8px; padding:15px; width:200px; text-align:center; }
+    .card img { width:100%; border-radius:8px; }
+    nav ul { display:flex; gap:20px; list-style:none; padding:0; margin:0; }
+    nav a { text-decoration:none; color:#007BFF; }
+    nav a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <h1>HTML & CSS コード集（基礎50例）</h1>
+  <p>案件ですぐ使えるHTML & CSSの基礎50例です。コードとプレビューを確認できます。</p>
+
+  <table>
+    <tr>
+      <th>カテゴリ</th>
+      <th>コード例</th>
+      <th>プレビュー</th>
+      <th>備考</th>
+    </tr>
+
+    <!-- テキスト関連 -->
+    <tr><td>テキスト</td><td><code>&lt;h1&gt;見出し1&lt;/h1&gt;</code></td><td class="preview"><h1>見出し1</h1></td><td>大見出し（h1）。1ページ1回が基本。</td></tr>
+    <tr><td>テキスト</td><td><code>&lt;h2&gt;見出し2&lt;/h2&gt;</code></td><td class="preview"><h2>見出し2</h2></td><td>サブ見出し（h2）</td></tr>
+    <tr><td>テキスト</td><td><code>&lt;h3&gt;見出し3&lt;/h3&gt;</code></td><td class="preview"><h3>見出し3</h3></td><td>小見出し（h3）</td></tr>
+    <tr><td>テキスト</td><td><code>&lt;p&gt;段落テキストです。&lt;/p&gt;</code></td><td class="preview"><p>段落テキストです。</p></td><td>本文用テキスト。改行はpタグで管理。</td></tr>
+    <tr><td>テキスト</td><td><code>&lt;strong&gt;強調テキスト&lt;/strong&gt;</code></td><td class="preview"><strong>強調テキスト</strong></td><td>文字を強調</td></tr>
+    <tr><td>テキスト</td><td><code>&lt;em&gt;強調（イタリック）&lt;/em&gt;</code></td><td class="preview"><em>強調（イタリック）</em></td><td>文字をイタリックで強調</td></tr>
+    <tr><td>テキスト</td><td><code>&lt;mark&gt;ハイライト&lt;/mark&gt;</code></td><td class="preview"><mark>ハイライト</mark></td><td>背景色で文字を強調</td></tr>
+    <tr><td>テキスト</td><td><code>&lt;blockquote&gt;引用文&lt;/blockquote&gt;</code></td><td class="preview"><blockquote>引用文</blockquote></td><td>引用用ブロック</td></tr>
+    <tr><td>テキスト</td><td><code>&lt;code&gt;コード例&lt;/code&gt;</code></td><td class="preview"><code>コード例</code></td><td>コード表示用</td></tr>
+    <tr><td>テキスト</td><td><code>&lt;hr&gt;</code></td><td class="preview"><hr></td><td>区切り線</td></tr>
+
+    <!-- リンク & ボタン -->
+    <tr><td>リンク</td><td><code>&lt;a href="#"&gt;リンク&lt;/a&gt;</code></td><td class="preview"><a href="#">リンク</a></td><td>基本リンク</td></tr>
+    <tr><td>リンク</td><td><code>&lt;a href="mailto:test@example.com"&gt;メール送信&lt;/a&gt;</code></td><td class="preview"><a href="mailto:test@example.com">メール送信</a></td><td>メールリンク</td></tr>
+    <tr><td>ボタン</td><td><code>&lt;button&gt;クリック&lt;/button&gt;</code></td><td class="preview"><button>クリック</button></td><td>基本ボタン</td></tr>
+    <tr><td>ボタン</td><td><code>&lt;button disabled&gt;無効ボタン&lt;/button&gt;</code></td><td class="preview"><button disabled>無効ボタン</button></td><td>非活性ボタン</td></tr>
+    <tr><td>ボタン</td><td><code>&lt;button class="btn-large"&gt;大ボタン&lt;/button&gt;</code></td><td class="preview"><button style="padding:15px 30px;">大ボタン</button></td><td>大きめCTAボタン</td></tr>
+
+    <!-- 画像・メディア -->
+    <tr><td>画像</td><td><code>&lt;img src="https://via.placeholder.com/150" alt="サンプル"&gt;</code></td><td class="preview"><img src="https://via.placeholder.com/150" alt="サンプル"></td><td>画像表示</td></tr>
+    <tr><td>画像</td><td><code>&lt;img src="https://via.placeholder.com/150" alt="丸型"&gt;</code></td><td class="preview"><img src="https://via.placeholder.com/150" alt="丸型" style="border-radius:50%;"></td><td>丸型プロフィール画像</td></tr>
+    <tr><td>メディア</td><td><code>&lt;video src="" controls width="200"&gt;&lt;/video&gt;</code></td><td class="preview"><video src="" controls width="200"></video></td><td>動画埋め込み</td></tr>
+    <tr><td>メディア</td><td><code>&lt;audio src="" controls&gt;&lt;/audio&gt;</code></td><td class="preview"><audio src="" controls></audio></td><td>音声埋め込み</td></tr>
+    <tr><td>背景画像</td><td><code>&lt;div style="background:url('https://via.placeholder.com/300') no-repeat center/cover; width:300px; height:150px;"&gt;&lt;/div&gt;</code></td><td class="preview"><div style="background:url('https://via.placeholder.com/300') no-repeat center/cover; width:300px; height:150px;"></div></td><td>背景画像表示</td></tr>
+
+    <!-- リスト & 表 -->
+    <tr><td>リスト</td><td><code>&lt;ul&gt;&lt;li&gt;項目1&lt;/li&gt;&lt;li&gt;項目2&lt;/li&gt;&lt;/ul&gt;</code></td><td class="preview"><ul><li>項目1</li><li>項目2</li></ul></td><td>箇条書き</td></tr>
+    <tr><td>リスト</td><td><code>&lt;ol&gt;&lt;li&gt;項目1&lt;/li&gt;&lt;li&gt;項目2&lt;/li&gt;&lt;/ol&gt;</code></td><td class="preview"><ol><li>項目1</li><li>項目2</li></ol></td><td>番号リスト</td></tr>
+    <tr><td>表</td><td><code>&lt;table&gt;&lt;tr&gt;&lt;th&gt;見出し&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;データ&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></td><td class="preview"><table><tr><th>見出し</th></tr><tr><td>データ</td></tr></table></td><td>基本テーブル</td></tr>
+    <tr><td>表</td><td><code>&lt;table style="border-collapse:collapse;"&gt;&lt;tr&gt;&lt;td style="border:1px solid #ccc"&gt;セル&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></td><td class="preview"><table style="border-collapse:collapse;"><tr><td style="border:1px solid #ccc">セル</td></tr></table></td><td>枠線テーブル</td></tr>
+
+    <!-- フォーム -->
+    <tr><td>フォーム</td><td><code>&lt;input type="text" placeholder="名前"&gt;</code></td><td class="preview"><input type="text" placeholder="名前"></td><td>テキスト入力</td></tr>
+    <tr><td>フォーム</td><td><code>&lt;textarea placeholder="内容"&gt;&lt;/textarea&gt;</code></td><td class="preview"><textarea placeholder="内容"></textarea></td><td>複数行入力</td></tr>
+    <tr><td>フォーム</td><td><code>&lt;input type="checkbox"&gt; 同意</code></td><td class="preview"><input type="checkbox"> 同意</td><td>チェックボックス</td></tr>
+    <tr><td>フォーム</td><td><code>&lt;input type="radio" name="gender"&gt; 男性&lt;br&gt;&lt;input type="radio" name="gender"&gt; 女性</code></td><td class="preview"><input type="radio" name="gender"> 男性<br><input type="radio" name="gender"> 女性</td><td>ラジオボタン</td></tr>
+    <tr><td>フォーム</td><td><code>&lt;select&gt;&lt;option&gt;選択&lt;/option&gt;&lt;/select&gt;</code></td><td class="preview"><select><option>選択</option></select></td><td>セレクトボックス</td></tr>
+    <tr><td>フォーム</td><td><code>&lt;input type="submit" value="送信"&gt;</code></td><td class="preview"><input type="submit" value="送信"></td><td>送信ボタン</td></tr>
+    <tr><td>フォーム</td><td><code>&lt;input type="password" placeholder="パスワード"&gt;</code></td><td class="preview"><input type="password" placeholder="パスワード"></td><td>パスワード入力</td></tr>
+    <tr><td>フォーム</td><td><code>&lt;input type="number" value="0"&gt;</code></td><td class="preview"><input type="number" value="0"></td><td>数値入力</td></tr>
+    <tr><td>フォーム</td><td><code>&lt;input type="range"&gt;</code></td><td class="preview"><input type="range"></td><td>スライダー</td></tr>
+
+    <!-- レイアウト -->
+    <tr><td>レイアウト</td><td><code>&lt;div&gt;コンテンツ&lt;/div&gt;</code></td><td class="preview"><div>コンテンツ</div></td><td>基本ブロック</td></tr>
+    <tr><td>レイアウト</td><td><code>&lt;header&gt;ヘッダー&lt;/header&gt;&lt;main&gt;本文&lt;/main&gt;&lt;footer&gt;フッター&lt;/footer&gt;</code></td><td class="preview"><header>ヘッダー</header><main>本文</main><footer>フッター</footer></td><td>ページ基本構造</td></tr>
+    <tr><td>レイアウト</td><td><code>&lt;div style="display:flex;"&gt;&lt;div&gt;左&lt;/div&gt;&lt;div&gt;右&lt;/div&gt;&lt;/div&gt;</code></td><td class="preview"><div style="display:flex;"><div>左</div><div>右</div></div></td><td>Flexbox 基本2カラム</td></tr>
+    <tr><td>レイアウト</td><td><code>&lt;div style="display:grid; grid-template-columns:1fr 1fr;"&gt;&lt;div&gt;1&lt;/div&gt;&lt;div&gt;2&lt;/div&gt;&lt;/div&gt;</code></td><td class="preview"><div style="display:grid; grid-template-columns:1fr 1fr;"><div>1</div><div>2</div></div></td><td>Grid 基本2カラム</td></tr>
+
+    <!-- ナビゲーション -->
+    <tr><td>ナビゲーション</td><td><code>&lt;nav&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;</code></td><td class="preview"><nav><ul><li><a href="#">Home</a></li><li><a href="#">About</a></li></ul></nav></td><td>横並びナビ</td></tr>
+    <tr><td>ナビゲーション</td><td><code>&lt;ul&gt;&lt;li&gt;&lt;a href="#"&gt;Item1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#"&gt;Item2&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</code></td><td class="preview"><ul><li><a href="#">Item1</a></li><li><a href="#">Item2</a></li></ul></td><td>縦ナビ</td></tr>
+    <tr><td>ナビゲーション</td><td><code>&lt;nav&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;</code></td><td class="preview"><nav><ul><li><a href="#">Link</a></li></ul></nav></td><td>フッターナビ</td></tr>
+
+  </table>
+</body>
+</html>
